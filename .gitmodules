@@ -1,0 +1,3 @@
+[submodule "QuantumKatas"]
+	path = QuantumKatas
+	url = https://github.com/microsoft/QuantumKatas.git

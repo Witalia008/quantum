@@ -1,0 +1,7 @@
+{
+    "name": "Katas Dev Container",
+    "image": "mcr.microsoft.com/quantum/iqsharp-base:0.11.2006.403",
+    "extensions": [
+        "quantum.quantum-devkit-vscode"
+    ]
+}

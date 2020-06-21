@@ -1,7 +1,15 @@
 {
-    "name": "Katas Dev Container",
-    "image": "mcr.microsoft.com/quantum/iqsharp-base:0.11.2006.403",
+    "name": "QuantumKatas Docker",
+    "dockerFile": "Dockerfile",
     "extensions": [
-        "quantum.quantum-devkit-vscode"
-    ]
+        "quantum.quantum-devkit-vscode",
+        "ms-vscode.csharp",
+        "donjayamanne.python-extension-pack"
+    ],
+    "postStartCommand": "./devcontainer/config.sh",
+    "runArgs": [
+        "-p",
+        "8888:8888"
+    ],
+    "postAttachCommand": "jupyter notebook --port=8888 --no-browser --ip=0.0.0.0"
 }
